@@ -1,9 +1,9 @@
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project',
-  imports: [NgForOf],
+  imports: [NgForOf, NgIf],
   templateUrl: './project.component.html'
 })
 export class ProjectComponent {

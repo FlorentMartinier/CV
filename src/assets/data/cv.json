@@ -1,148 +1,184 @@
 {
     "personalInfo": {
-      "name": "Florent Martinier",
-      "title": "Développeur Full Stack Java / Kotlin / Angular",
-      "email": "florent.martinier@free.fr",
-      "phone": "+33 6 78 00 04 55",
-      "address": "30740 Le Cailar",
-      "birthDate": "12 Juin 1993",
-      "nationality": "Française",
-      "github": "https://github.com/FlorentMartinier"
+        "title": "Développeur Full Stack avec 9 ans d'expérience, spécialisé en Java, Kotlin et Angular .",
+        "name": "Florent Martinier",
+        "email": "florent.martinier@free.fr",
+        "phone": "+33 6 78 00 04 55",
+        "address": "30740 Le Cailar",
+        "birthDate": "12 Juin 1993",
+        "nationality": "Française",
+        "github": "https://github.com/FlorentMartinier"
     },
     "experiences": [
-      {
-        "title": "Développeur Back-end Java",
-        "company": "Méritis",
-        "location": "Montpellier",
-        "period": "Mai 2025 - Présent",
-        "description": [
-          "Consultant Back-end en mission chez CA-TS",
-          "Développement et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers"
-        ],
-        "stack": ["Java 8-21", "Spring Boot", "MySQL", "Kafka", "Kubernetes"]
-      },
-      {
-        "title": "Développeur Full Stack Kotlin / Angular",
-        "company": "Sopht",
-        "location": "Lyon (Full remote)",
-        "period": "Nov 2022 - Mar 2025",
-        "description": [
-          "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.)",
-          "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions",
-          "Transformation des données récoltées en empreinte environnementale",
-          "Participation au frontend permettant de visualiser et piloter la consommation CO2eq"
-        ],
-        "stack": ["Kotlin", "Spring Boot", "Python", "Angular 17", "PostgreSQL", "Kubernetes", "Docker", "DuckDB"]
-      },
-      {
-        "title": "Ingénieur développement Java / Angular",
-        "company": "Sogelink",
-        "location": "Lyon",
-        "period": "Nov 2020 - Nov 2022",
-        "description": [
-          "Participation à la définition des spécifications techniques",
-          "Développement de nouvelles fonctionnalités",
-          "Corrections de bugs",
-          "Travail en méthodologie SAFe"
-        ],
-        "stack": ["Java 11", "Spring Boot", "Angular 8", "PostgreSQL", "ActiveMQ"]
-      },
-      {
-        "title": "Ingénieur développement Java / Angular",
-        "company": "Hardis Group",
-        "location": "Lyon",
-        "period": "Jan 2020 - Nov 2020",
-        "description": [
-          "Création de spécifications fonctionnelles et techniques",
-          "Conception du modèle de données",
-          "Développement des fonctionnalités",
-          "Pilotage technique de 2 alternants"
-        ],
-        "stack": ["Java 11", "Spring Boot", "Angular 7", "MariaDB"]
-      },
-      {
-        "title": "Ingénieur développement",
-        "company": "Hardis Group",
-        "location": "Lyon",
-        "period": "Sep 2016 - Jan 2020",
-        "description": [
-          "Recueil de besoins et définition de solutions",
-          "TMA évolutive",
-          "Formation des clients sur la technologie GraphTalk A.I.A"
-        ],
-        "stack": ["GraphTalk A.I.A"]
-      },
-      {
-        "title": "Stage Développement Java",
-        "company": "Iamanys",
-        "location": "Fabrègues",
-        "period": "Fév 2016 - Aoû 2016",
-        "description": [
-          "Maintenance et évolution des logiciels",
-          "Automatisation de tests"
-        ],
-        "stack": ["Java 8", "GWT", "JXT", "JavaFw", "JUnit"]
-      }
+        {
+            "title": "Développeur Back-end Java",
+            "company": "Méritis",
+            "location": "Montpellier",
+            "period": "Mai 2025 - Présent",
+            "description": [
+                "Consultant Back-end en mission chez CA-TS",
+                "Développement et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers"
+            ],
+            "stack": [
+                "Java 8-21",
+                "Spring Boot",
+                "MySQL",
+                "Kafka",
+                "Kubernetes"
+            ]
+        },
+        {
+            "title": "Développeur Full Stack Kotlin / Angular",
+            "company": "Sopht",
+            "location": "Lyon (Full remote)",
+            "period": "Nov 2022 - Mar 2025",
+            "description": [
+                "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.)",
+                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions",
+                "Transformation des données récoltées en empreinte environnementale",
+                "Participation au frontend permettant de visualiser et piloter la consommation CO2eq"
+            ],
+            "stack": [
+                "Kotlin",
+                "Spring Boot",
+                "Python",
+                "Angular 17",
+                "PostgreSQL",
+                "Kubernetes",
+                "Docker",
+                "DuckDB"
+            ]
+        },
+        {
+            "title": "Ingénieur développement Java / Angular",
+            "company": "Sogelink",
+            "location": "Lyon",
+            "period": "Nov 2020 - Nov 2022",
+            "description": [
+                "Participation à la définition des spécifications techniques",
+                "Développement de nouvelles fonctionnalités",
+                "Corrections de bugs",
+                "Travail en méthodologie SAFe"
+            ],
+            "stack": [
+                "Java 11",
+                "Spring Boot",
+                "Angular 8",
+                "PostgreSQL",
+                "ActiveMQ"
+            ]
+        },
+        {
+            "title": "Ingénieur développement Java / Angular",
+            "company": "Hardis Group",
+            "location": "Lyon",
+            "period": "Jan 2020 - Nov 2020",
+            "description": [
+                "Création de spécifications fonctionnelles et techniques",
+                "Conception du modèle de données",
+                "Développement des fonctionnalités",
+                "Pilotage technique de 2 alternants"
+            ],
+            "stack": [
+                "Java 11",
+                "Spring Boot",
+                "Angular 7",
+                "MariaDB"
+            ]
+        },
+        {
+            "title": "Ingénieur développement",
+            "company": "Hardis Group",
+            "location": "Lyon",
+            "period": "Sep 2016 - Jan 2020",
+            "description": [
+                "Recueil de besoins et définition de solutions",
+                "TMA évolutive",
+                "Formation des clients sur la technologie GraphTalk A.I.A"
+            ],
+            "stack": [
+                "GraphTalk A.I.A"
+            ]
+        },
+        {
+            "title": "Stage Développement Java",
+            "company": "Iamanys",
+            "location": "Fabrègues",
+            "period": "Fév 2016 - Aoû 2016",
+            "description": [
+                "Maintenance et évolution des logiciels",
+                "Automatisation de tests"
+            ],
+            "stack": [
+                "Java 8",
+                "GWT",
+                "JXT",
+                "JavaFw",
+                "JUnit"
+            ]
+        }
     ],
     "education": [
-      {
-        "degree": "Master double compétence : informatique et sciences sociales",
-        "school": "Université Grenoble Alpes",
-        "location": "Grenoble",
-        "period": "2014 - 2016",
-        "description": "Master destiné à donner des compétences informatiques à des personnes issues de cursus non informatiques"
-      },
-      {
-        "degree": "Licence sciences cognitives",
-        "school": "Université Lumière Lyon 2",
-        "location": "Lyon",
-        "period": "2011 - 2014"
-      },
-      {
-        "degree": "Baccalauréat Scientifique mention bien",
-        "school": "Lycée Georges Clémenceau",
-        "location": "Montpellier",
-        "period": "2008 - 2011"
-      }
+        {
+            "degree": "Master double compétence : informatique et sciences sociales",
+            "school": "Université Grenoble Alpes",
+            "location": "Grenoble",
+            "period": "2014 - 2016",
+            "description": "Master destiné à donner des compétences informatiques à des personnes issues de cursus non informatiques"
+        },
+        {
+            "degree": "Licence sciences cognitives",
+            "school": "Université Lumière Lyon 2",
+            "location": "Lyon",
+            "period": "2011 - 2014"
+        },
+        {
+            "degree": "Baccalauréat Scientifique mention bien",
+            "school": "Lycée Georges Clémenceau",
+            "location": "Montpellier",
+            "period": "2008 - 2011"
+        }
     ],
     "projects": [
-      {
-        "name": "Site web de présentation de créations de pizzas",
-        "description": "Création d’un site web Angular présentant mes créations de pizzas",
-        "link": "https://pizzas-de-florent.netlify.app",
-        "details": "Code source disponible sur GitHub"
-      },
-      {
-        "name": "Application Android Killer Party",
-        "description": "Application d’automatisation du jeu 'Killer Party'",
-        "link": "https://killer-party.en.aptoide.com/app",
-        "details": "Développée en Kotlin, code source disponible sur GitHub"
-      },
-      {
-        "name": "Application Android Smash Up",
-        "description": "Application pour améliorer l’expérience du jeu de société Smash Up",
-        "details": "Développée en Java Android, projet privé disponible sur demande"
-      }
+        {
+            "name": "Barrel Manager",
+            "description": "Application Android de gestion de vieillissement en fût (Kotlin)",
+            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=fr"
+        },
+        {
+            "name": "Carte de pizzas",
+            "description": "Site web de présentation de mes créations de pizzas (Angular, TailwindCSS)",
+            "link": "https://pizzas-de-florent.netlify.app"
+        },
+        {
+            "name": "Killer Party",
+            "description": "Application Andoid d’automatisation du jeu 'Killer Party' (Kotlin)",
+            "link": "https://killer-party.en.aptoide.com/app"
+        },
+        {
+            "name": "Smash Up",
+            "description": "Application Android pour améliorer l’expérience du jeu de société Smash Up. Code source privé, donné sur demande."
+        }
     ],
     "languages": [
-      {
-        "name": "Français",
-        "level": "Langue maternelle"
-      },
-      {
-        "name": "Anglais",
-        "level": "Compétence professionnelle (niveau B1)"
-      }
+        {
+            "name": "Français",
+            "level": "Langue maternelle"
+        },
+        {
+            "name": "Anglais",
+            "level": "Compétence professionnelle (niveau B1)"
+        }
     ],
     "skills": [
-      "Kotlin",
-      "Java",
-      "Spring",
-      "Angular",
-      "SQL",
-      "HTML / CSS",
-      "Docker",
-      "Kubernetes",
-      "Scrum"
+        "Kotlin",
+        "Java",
+        "Spring",
+        "Angular",
+        "SQL",
+        "HTML / CSS",
+        "Docker",
+        "Kubernetes",
+        "Scrum"
     ]
-  }
+}

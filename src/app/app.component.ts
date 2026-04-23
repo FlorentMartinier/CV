@@ -4,9 +4,8 @@ import { CV } from './models/cv.model';
 import { CvService } from './services/cv.services';
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { EducationComponent } from "./components/education/education.component";
-import { LanguageComponent } from "./components/language/language.component";
 import { ProjectComponent } from "./components/project/project.component";
-import { NgIf } from '@angular/common';
+import { NgIf, NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +13,9 @@ import { NgIf } from '@angular/common';
     RouterOutlet,
     ExperienceComponent,
     EducationComponent,
-    LanguageComponent,
     ProjectComponent,
-    NgIf
+    NgIf,
+    NgForOf
   ],
   templateUrl: './app.component.html'
 })

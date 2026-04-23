@@ -1,12 +1,12 @@
 <div class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-2 mb-4">
-      Education
-    </h2>
-  
-    <div *ngFor="let edu of education" class="mb-3">
-      <p class="font-medium">{{ edu.degree }}</p>
-      <p class="text-sm text-gray-500">
-        {{ edu.school }} - {{ edu.year }}
-      </p>
-    </div>
+  <h2 class="text-xl font-bold border-b pb-2 mb-4">
+    Education
+  </h2>
+
+  <div *ngFor="let edu of education" class="mb-3">
+    <p class="font-medium">{{ edu.degree }}</p>
+    <p class="text-sm text-gray-500">
+      {{ edu.school }} - {{ edu.period }}
+    </p>
   </div>
+</div>

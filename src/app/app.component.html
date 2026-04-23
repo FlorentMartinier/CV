@@ -2,39 +2,84 @@
   <div class="w-full max-w-5xl bg-white shadow-lg rounded-xl overflow-hidden flex">
 
     <!-- SIDEBAR -->
-    <div class="w-1/3 bg-slate-800 text-white p-6">
+    <div class="w-1/3 bg-slate-800 text-white px-8 py-10 flex flex-col justify-between">
 
-      <h1 class="text-2xl font-bold mb-2">
-        {{ cv.personalInfo.name }}
-      </h1>
+      <div class="space-y-8">
+        <!-- Contact -->
+        <div class="space-y-2">
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">
+            Contact
+          </h2>
+          <p class="text-sm">{{ cv.personalInfo.email }}</p>
+          <p class="text-sm">{{ cv.personalInfo.phone }}</p>
+          <p class="text-sm">{{ cv.personalInfo.address }}</p>
+        </div>
 
-      <p class="text-slate-300 mb-6">
-        {{ cv.personalInfo.title }}
-      </p>
+        <!-- Github -->
+        <div class="space-y-2">
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">
+            GitHub
+          </h2>
+          <a [href]="cv.personalInfo.github" target="_blank" class="text-blue-400 text-sm hover:underline break-all">
+            {{ cv.personalInfo.github }}
+          </a>
+        </div>
 
-      <div class="mb-6">
-        <h2 class="font-semibold mb-2 text-slate-400 uppercase text-sm">Contact</h2>
-        <p class="text-sm">{{ cv.personalInfo.email }}</p>
-        <p class="text-sm">{{ cv.personalInfo.phone }}</p>
-        <p class="text-sm">{{ cv.personalInfo.address }}</p>
+        <div class="space-y-2">
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">
+            Langues
+          </h2>
+
+          <div *ngFor="let lang of cv.languages">
+            <p class="text-sm font-medium">{{ lang.name }}</p>
+            <p class="text-xs text-slate-300">{{ lang.level }}</p>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h2 class="text-slate-400 uppercase text-xs tracking-wider">
+            Compétences
+          </h2>
+
+          <div class="flex flex-wrap gap-2">
+            <span *ngFor="let skill of cv.skills" class="bg-slate-700 text-xs px-3 py-1 rounded-full">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
       </div>
-
-      <app-language [languages]="cv.languages"></app-language>
 
     </div>
 
     <!-- MAIN -->
     <div class="w-2/3 p-8">
 
-      <div class="flex justify-end mb-4">
-        <button
-          (click)="downloadPDF()"
-          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow"
-        >
-          Export PDF
-        </button>
+      <!-- HEADER -->
+      <div class="mb-8">
+
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <h1 class="text-3xl font-bold">
+              {{ cv.personalInfo.name }}
+            </h1>
+            <p class="text-gray-600">
+              {{ cv.personalInfo.title }}
+            </p>
+          </div>
+
+          <button (click)="downloadPDF()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow">
+            Export PDF
+          </button>
+        </div>
+
+        <!-- Accroche -->
+        <p class="text-gray-700 leading-relaxed">
+          {{ cv.personalInfo.summary }}
+        </p>
+
       </div>
 
+      <!-- CONTENT -->
       <app-experience [experiences]="cv.experiences"></app-experience>
       <app-education [education]="cv.education"></app-education>
       <app-project [projects]="cv.projects"></app-project>

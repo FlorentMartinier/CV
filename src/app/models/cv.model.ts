@@ -4,6 +4,7 @@ export interface CV {
     education: Education[];
     languages: Language[];
     projects: Project[];
+    skills: string[];
   }
   
   export interface PersonalInfo {
@@ -15,6 +16,7 @@ export interface CV {
     birthDate: string;
     nationality: string;
     github: string;
+    summary: string;
   }
   
   export interface Experience {
@@ -29,7 +31,8 @@ export interface CV {
   export interface Education {
     degree: string;
     school: string;
-    year: string;
+    location: string;
+    period: string;
   }
   
   export interface Language {
