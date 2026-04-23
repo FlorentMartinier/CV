@@ -1,6 +1,6 @@
 {
     "personalInfo": {
-        "title": "Développeur Full Stack avec 9 ans d'expérience, spécialisé en Java, Kotlin et Angular .",
+        "title": "Développeur Full Stack avec 9 ans d'expérience, spécialisé en Java, Kotlin et Angular.",
         "name": "Florent Martinier",
         "email": "florent.martinier@free.fr",
         "phone": "+33 6 78 00 04 55",
@@ -87,7 +87,7 @@
             ]
         },
         {
-            "title": "Ingénieur développement",
+            "title": "Ingénieur développement GraphtTalk",
             "company": "Hardis Group",
             "location": "Lyon",
             "period": "Sep 2016 - Jan 2020",
