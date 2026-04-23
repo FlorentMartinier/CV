@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+    @page {
+        margin: 0;
+        size: auto;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    app-experience,
+    app-education,
+    app-project {
+        display: block;
+        page-break-inside: auto;
+    }
+}
