@@ -1,10 +1,10 @@
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Education } from '../../models/cv.model';
 
 @Component({
   selector: 'app-education',
-  imports: [NgForOf],
+  imports: [NgForOf, NgIf],
   templateUrl: './education.component.html'
 })
 export class EducationComponent {

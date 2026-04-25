@@ -1,12 +1,38 @@
 <div class="mb-8">
-  <h2 class="text-xl font-bold border-b pb-2 mb-4">
+  <h2 class="text-xl font-bold border-b pb-2 mb-6">
     Education
   </h2>
 
-  <div *ngFor="let edu of education" class="mb-3">
-    <p class="font-medium">{{ edu.degree }}</p>
-    <p class="text-sm text-gray-500">
-      {{ edu.school }} - {{ edu.period }}
-    </p>
+  <div class="relative border-l-2 border-gray-200 ml-4 md:ml-6">
+
+    <div *ngFor="let edu of education; let last = last" class="mb-8 ml-10 relative" [class.mb-0]="last">
+
+      <div
+        class="absolute -left-[60px] -top-[7px] flex items-center justify-center w-10 h-10 bg-white rounded-full border-2 border-gray-200 overflow-hidden shadow-sm">
+        <ng-container *ngIf="edu.logo; else defaultEduCircle">
+          <img [src]="edu.logo" [alt]="edu.school" class="w-full h-full object-cover p-0">
+        </ng-container>
+        <ng-template #defaultEduCircle>
+          <div class="w-full h-full bg-slate-100 flex items-center justify-center">
+            <span class="text-[10px] text-slate-400 font-bold uppercase"></span>
+          </div>
+        </ng-template>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-1">
+        <h3 class="font-bold text-lg leading-tight">
+          {{ edu.degree }}
+        </h3>
+        <span
+          class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded print:text-gray-500 whitespace-nowrap">
+          {{ edu.period }}
+        </span>
+      </div>
+
+      <p class="text-sm font-semibold text-gray-700">
+        {{ edu.school }}
+      </p>
+
+    </div>
   </div>
 </div>

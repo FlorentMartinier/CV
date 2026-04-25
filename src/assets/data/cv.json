@@ -8,14 +8,16 @@
         "birthDate": "12 Juin 1993",
         "nationality": "Française",
         "github": "https://github.com/FlorentMartinier",
-        "website" : "https://florent-martinier.netlify.app"
+        "website": "https://florent-martinier.netlify.app",
+        "photo": "assets/photo.jfif"
     },
     "experiences": [
         {
             "title": "Développeur Back-end Java",
             "company": "Méritis",
             "location": "Montpellier",
-            "period": "Mai 2025 - Présent",
+            "period": "Avril 2025 - Présent",
+            "logo": "assets/meritis_logo.jfif",
             "description": [
                 "Consultant Back-end en mission chez CA-TS",
                 "Développement et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers"
@@ -33,11 +35,12 @@
             "company": "Sopht",
             "location": "Lyon (Full remote)",
             "period": "Nov 2022 - Mar 2025",
+            "logo": "assets/sopht_logo.jfif",
             "description": [
                 "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.)",
-                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions",
                 "Transformation des données récoltées en empreinte environnementale",
-                "Participation au frontend permettant de visualiser et piloter la consommation CO2eq"
+                "Participation à la mise en place d'un frontend permettant de visualiser et piloter la consommation CO2eq",
+                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions"
             ],
             "stack": [
                 "Kotlin",
@@ -45,6 +48,7 @@
                 "Python",
                 "Angular 17",
                 "PostgreSQL",
+                "MongoDD",
                 "Kubernetes",
                 "Docker",
                 "DuckDB"
@@ -55,6 +59,7 @@
             "company": "Sogelink",
             "location": "Lyon",
             "period": "Nov 2020 - Nov 2022",
+            "logo": "assets/sogelink_logo.jfif",
             "description": [
                 "Participation à la définition des spécifications techniques",
                 "Développement de nouvelles fonctionnalités",
@@ -74,6 +79,7 @@
             "company": "Hardis Group",
             "location": "Lyon",
             "period": "Jan 2020 - Nov 2020",
+            "logo": "assets/hardis_logo.jfif",
             "description": [
                 "Création de spécifications fonctionnelles et techniques",
                 "Conception du modèle de données",
@@ -92,6 +98,7 @@
             "company": "Hardis Group",
             "location": "Lyon",
             "period": "Sep 2016 - Jan 2020",
+            "logo": "assets/hardis_logo.jfif",
             "description": [
                 "Recueil de besoins et définition de solutions",
                 "TMA évolutive",
@@ -125,13 +132,15 @@
             "school": "Université Grenoble Alpes",
             "location": "Grenoble",
             "period": "2014 - 2016",
-            "description": "Master destiné à donner des compétences informatiques à des personnes issues de cursus non informatiques"
+            "description": "Master destiné à donner des compétences informatiques à des personnes issues de cursus non informatiques",
+            "logo": "assets/universit_grenoble_alpes_logo.jfif"
         },
         {
             "degree": "Licence sciences cognitives",
             "school": "Université Lumière Lyon 2",
             "location": "Lyon",
-            "period": "2011 - 2014"
+            "period": "2011 - 2014",
+            "logo": "assets/universite_lyon_2.jfif"
         },
         {
             "degree": "Baccalauréat Scientifique mention bien",
@@ -144,21 +153,20 @@
         {
             "name": "Barrel Manager",
             "description": "Application Android de gestion de vieillissement en fût (Kotlin)",
-            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=fr"
+            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=fr",
+            "logo": "assets/barrel_manager.webp"
         },
         {
             "name": "Carte de pizzas",
             "description": "Site web de présentation de mes créations de pizzas (Angular, TailwindCSS)",
-            "link": "https://pizzas-de-florent.netlify.app"
+            "link": "https://pizzas-de-florent.netlify.app",
+            "logo": "assets/logo_pizza.png"
         },
         {
             "name": "Killer Party",
             "description": "Application Andoid d’automatisation du jeu 'Killer Party' (Kotlin)",
-            "link": "https://killer-party.en.aptoide.com/app"
-        },
-        {
-            "name": "Smash Up",
-            "description": "Application Android pour améliorer l’expérience du jeu de société Smash Up. Code source privé, donné sur demande."
+            "link": "killer_party.webp",
+            "logo": "assets/killer_party.webp"
         }
     ],
     "languages": [
