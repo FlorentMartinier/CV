@@ -10,6 +10,7 @@ export interface CV {
 export interface PersonalInfo {
   name: string;
   title: string;
+  firstJobDate: string;
   email: string;
   phone: string;
   address: string;

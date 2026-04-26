@@ -1,14 +1,13 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { default as html2canvas } from 'html2canvas';
+import { toCanvas } from 'html-to-image';
 import { jsPDF } from 'jspdf';
 import { EducationComponent } from "./components/education/education.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { ProjectComponent } from "./components/project/project.component";
 import { CV } from './models/cv.model';
 import { CvService } from './services/cv.services';
-import { toCanvas } from 'html-to-image';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +34,32 @@ export class AppComponent {
     this.cvService.getCV().subscribe(data => {
       this.cv = data;
     });
+  }
+
+  get yearsOfExperience(): number {
+    const firstDate = this.cv.personalInfo.firstJobDate;
+    if (!firstDate) return 0;
+  
+    const startDate = new Date(firstDate);
+    const today = new Date();
+    
+    let diff = today.getFullYear() - startDate.getFullYear();
+    
+    // Vérification si l'anniversaire de carrière est passé cette année
+    const monthDiff = today.getMonth() - startDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < startDate.getDate())) {
+      diff--;
+    }
+  
+    return diff;
+  }
+
+  get formattedSummary(): string {
+    const summary = this.cv.personalInfo.title;
+    if (!summary) return '';
+    
+    // On remplace le tag {{years}} par la valeur calculée
+    return summary.replace('{{years}}', this.yearsOfExperience.toString());
   }
 
   public async downloadPDF() {

@@ -1,6 +1,7 @@
 {
     "personalInfo": {
-        "title": "Développeur Full Stack avec 9 ans d'expérience, spécialisé en Java, Kotlin et Angular.",
+        "title": "Développeur Full Stack Senior {{years}} ans d'expérience, spécialisé en Java, Kotlin et Angular.",
+        "firstJobDate": "2016-02-01",
         "name": "Florent Martinier",
         "email": "florent.martinier@free.fr",
         "phone": "+33 6 78 00 04 55",
@@ -16,11 +17,11 @@
             "title": "Développeur Back-end Java",
             "company": "Méritis",
             "location": "Montpellier",
-            "period": "Avril 2025 - Présent",
+            "period": "Avr 2025 - Présent",
             "logo": "assets/meritis_logo.jfif",
             "description": [
-                "Consultant Back-end en mission chez CA-TS",
-                "Développement et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers"
+                "Consultant Back-end en mission chez CA-TS.",
+                "Développement, optimisation et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers."
             ],
             "stack": [
                 "Java 8-21",
@@ -37,10 +38,11 @@
             "period": "Nov 2022 - Mar 2025",
             "logo": "assets/sopht_logo.jfif",
             "description": [
-                "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.)",
-                "Transformation des données récoltées en empreinte environnementale",
-                "Participation à la mise en place d'un frontend permettant de visualiser et piloter la consommation CO2eq",
-                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions"
+                "Développement logiciel dans le domaine de l'écologie, mesure environnementale et décarbonation de l'IT.",
+                "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.).",
+                "Transformation des données récoltées en empreinte environnementale.",
+                "Participation à la mise en place d'un frontend permettant de visualiser et piloter la consommation CO2eq.",
+                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions."
             ],
             "stack": [
                 "Kotlin",
@@ -48,7 +50,7 @@
                 "Python",
                 "Angular 17",
                 "PostgreSQL",
-                "MongoDD",
+                "MongoDB",
                 "Kubernetes",
                 "Docker",
                 "DuckDB"
@@ -61,10 +63,10 @@
             "period": "Nov 2020 - Nov 2022",
             "logo": "assets/sogelink_logo.jfif",
             "description": [
-                "Participation à la définition des spécifications techniques",
-                "Développement de nouvelles fonctionnalités",
-                "Corrections de bugs",
-                "Travail en méthodologie SAFe"
+                "Développement logiciel à destination des géomètres au sein d'un pôle R&D (application Geosnap).",
+                "Participation à la définition des spécifications techniques.",
+                "Développement, maintenance, code review.",
+                "Travail en méthodologie SAFe."
             ],
             "stack": [
                 "Java 11",
@@ -81,10 +83,11 @@
             "period": "Jan 2020 - Nov 2020",
             "logo": "assets/hardis_logo.jfif",
             "description": [
-                "Création de spécifications fonctionnelles et techniques",
-                "Conception du modèle de données",
-                "Développement des fonctionnalités",
-                "Pilotage technique de 2 alternants"
+                "Réalisation d’un projet en interne de gestion de ressources entreprise (savoir quelles ressources sont disponibles quand, avec quelles compétences, quelles certifications, etc.).",
+                "Création de spécifications fonctionnelles et techniques \"from scratch\".",
+                "Conception du modèle de données.",
+                "Développement des fonctionnalités.",
+                "Pilotage technique de deux alternants."
             ],
             "stack": [
                 "Java 11",
@@ -100,6 +103,7 @@
             "period": "Sep 2016 - Jan 2020",
             "logo": "assets/hardis_logo.jfif",
             "description": [
+                "Tierce Maintenance Applicative pour le compte de DXC sur la solution métier GraphTalk A.I.A (secteur Assurances Vie et Non-Vie).",
                 "Recueil de besoins et définition de solutions",
                 "TMA évolutive",
                 "Formation des clients sur la technologie GraphTalk A.I.A"
@@ -114,8 +118,9 @@
             "location": "Fabrègues",
             "period": "Fév 2016 - Aoû 2016",
             "description": [
-                "Maintenance et évolution des logiciels",
-                "Automatisation de tests"
+                "Développement logiciel dans le domaine de la santé (suivi de traitement des plaies).",
+                "Maintenance et évolution des logiciels.",
+                "Automatisation de tests."
             ],
             "stack": [
                 "Java 8",
@@ -132,7 +137,6 @@
             "school": "Université Grenoble Alpes",
             "location": "Grenoble",
             "period": "2014 - 2016",
-            "description": "Master destiné à donner des compétences informatiques à des personnes issues de cursus non informatiques",
             "logo": "assets/universit_grenoble_alpes_logo.jfif"
         },
         {
@@ -164,7 +168,7 @@
         },
         {
             "name": "Killer Party",
-            "description": "Application Andoid d’automatisation du jeu 'Killer Party' (Kotlin)",
+            "description": "Application Android d’automatisation du jeu 'Killer Party' (Kotlin)",
             "link": "killer_party.webp",
             "logo": "assets/killer_party.webp"
         }
@@ -186,6 +190,7 @@
         "Angular",
         "SQL",
         "HTML / CSS",
+        "TailwindCSS",
         "Docker",
         "Kubernetes",
         "Scrum"
