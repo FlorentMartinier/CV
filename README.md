@@ -1,59 +1,88 @@
-# MonCv
+# 📄 Dynamic CV - Florent Martinier
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+This project is an interactive and PDF-exportable Resume generator, built with **Angular 17** and **Tailwind CSS**. The CV content is entirely driven by a JSON configuration file, allowing for instant updates without modifying the HTML code.
 
-## Development server
+## 🔗 Live Demo
+You can view a live example of the rendered project here:  
+**[https://cv-florent-martinier.netlify.app/](https://cv-florent-martinier.netlify.app/)**
 
-To start a local development server, run:
+## 🚀 Local Setup
 
-```bash
-ng serve
-```
+### Prerequisites
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Installation
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Launch the development server:
+   ```bash
+   ng serve
+   ```
+4. Open your browser at `http://localhost:4200`.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠 Updating the CV Content
 
-```bash
-ng generate component component-name
-```
+All data is stored in the following file: `src/assets/data/cv-data.json`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### JSON Field Documentation
 
-```bash
-ng generate --help
-```
+#### 1. `personalInfo` (Identity & Contact)
+| Field | Description | Example / Format |
+| :--- | :--- | :--- |
+| `title` | Resume headline with experience variable. | `"Senior Full Stack Developer, {{years}} years of experience..."` |
+| `firstJobDate` | Your career start date (used to calculate `{{years}}`). | `"YYYY-MM-DD"` (e.g., `"2016-02-01"`) |
+| `photo` | Path to your profile picture. | `"assets/photo.jpg"` |
+| `github` / `website` | Links to your social profiles/portfolio. | `"https://..."` |
 
-## Building
+#### 2. `experiences` (Work History)
+| Field | Description | Format |
+| :--- | :--- | :--- |
+| `title` | Job title / Position. | `string` |
+| `company` | Name of the employer. | `string` |
+| `period` | Duration of the mission. | `"MMM YYYY - MMM YYYY" / "Present"` |
+| `description` | Key responsibilities and achievements. | `Array<string>` (Rendered as bullet points) |
+| `stack` | Technologies used during this experience. | `Array<string>` (Rendered as badges) |
 
-To build the project run:
+#### 3. `education` (Academic Background)
+| Field | Description | Format |
+| :--- | :--- | :--- |
+| `degree` | Name of the diploma or certification. | `string` |
+| `school` | University or school name. | `string` |
+| `period` | Years of study. | `"YYYY - YYYY"` |
+| `description` | (Optional) Details about the curriculum. | `string` |
 
-```bash
-ng build
-```
+#### 4. `projects` (Side Projects)
+| Field | Description | Format |
+| :--- | :--- | :--- |
+| `name` | Project title. | `string` |
+| `description` | Brief overview of what the project does. | `string` |
+| `link` | URL to the live project or GitHub repo. | `string` |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+#### 5. `skills` (General Tech Stack)
+| Field | Description | Format |
+| :--- | :--- | :--- |
+| `skills` | List of core technologies for the sidebar. | `Array<string>` (Rendered as badges) |
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 💡 Technical Implementation
 
-```bash
-ng test
-```
+### Dynamic Experience Calculation
+The `{{years}}` placeholder in the `title` field is dynamically replaced by the Angular component. It calculates the number of years between the current date and the `firstJobDate` defined in the JSON.
 
-## Running end-to-end tests
+### PDF Generation
+The project uses `html-to-image` and `jsPDF`. To ensure a low file size (< 2MB), the PDF is generated using 85% JPEG compression.
 
-For end-to-end (e2e) testing, run:
+> [!IMPORTANT]  
+> **Note on Responsive Design:** This project is specifically designed and optimized for **Desktop screens**. The layout and PDF export functionality are tailored for a computer-based viewing experience to maintain the integrity of a professional A4 resume format. It is not intended for mobile screen usage.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🎨 Design Customization
+The UI is styled with **Tailwind CSS**. You can update the main colors in `src/app/cv/cv.component.html` by changing utility classes (e.g., `bg-slate-800`).
