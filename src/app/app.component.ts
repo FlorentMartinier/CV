@@ -1,7 +1,7 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { toCanvas } from 'html-to-image';
+import { toJpeg } from 'html-to-image';
 import { jsPDF } from 'jspdf';
 import { EducationComponent } from "./components/education/education.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
@@ -64,34 +64,50 @@ export class AppComponent {
 
   public async downloadPDF() {
     const element = this.cvContent.nativeElement;
-
+  
     try {
-      const canvas = await toCanvas(element, {
-        quality: 1,
-        pixelRatio: 2, // Pour la netteté
+      const dataUrl = await toJpeg(element, {
+        quality: 0.85,
+        pixelRatio: 2,
         backgroundColor: '#ffffff',
+        // ON FORCE LES BORDS CARRÉS ICI
         style: {
-          borderRadius: '0' // On force les coins carrés
+          borderRadius: '0',
+          transform: 'none'
         }
       });
-
-      const imgData = canvas.toDataURL('image/png');
-
-      // 2. Calcul des dimensions PDF
-      const pdfWidth = 210;
-      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
+  
       const pdf = new jsPDF({
         orientation: 'p',
         unit: 'mm',
-        format: [pdfWidth, pdfHeight]
+        format: 'a4',
+        compress: true
       });
-
-      pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-      pdf.save('CV_Florent_Martinier.pdf');
-
+  
+      const imgProps = pdf.getImageProperties(dataUrl);
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      
+      // CALCUL DU RATIO POUR ÉVITER LA COUPURE
+      // On calcule la hauteur proportionnelle à la largeur A4 (210mm)
+      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+  
+      // Si ton CV est plus long qu'une page A4 (297mm), 
+      // on doit dire au PDF de s'adapter ou d'ajouter une page.
+      // Pour un CV d'une seule page longue :
+      const finalPdfHeight = pdfHeight > 297 ? pdfHeight : 297;
+      
+      // On crée un PDF à la taille exacte du contenu pour ne rien couper
+      const customPdf = new jsPDF({
+        orientation: 'p',
+        unit: 'mm',
+        format: [pdfWidth, finalPdfHeight]
+      });
+  
+      customPdf.addImage(dataUrl, 'JPEG', 0, 0, pdfWidth, pdfHeight, undefined, 'FAST');
+      customPdf.save('CV_Florent_Martinier.pdf');
+  
     } catch (error) {
-      console.error('Erreur lors de la génération du PDF', error);
+      console.error('Erreur génération PDF:', error);
     }
   }
 }
