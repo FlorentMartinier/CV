@@ -5,8 +5,20 @@
 @media print {
     @page {
         margin: 0;
-        size: auto;
+        size: 270mm 500mm;
+        height: 690mm
     }
+
+    .cv-print-container {
+        width: 270mm !important;
+        height: 690mm !important;
+        max-height: 690mm !important;
+        overflow: hidden !important;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
 
     * {
         -webkit-print-color-adjust: exact !important;
