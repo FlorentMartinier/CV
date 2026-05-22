@@ -5,7 +5,7 @@ export interface CV {
   education: Education[];
   languages: Language[];
   projects: Project[];
-  skills: string[];
+  skillCategories: SkillCategorie[];
 }
 
 export interface Labels {
@@ -32,6 +32,10 @@ export interface PersonalInfo {
   github: string;
   summary: string;
   photo: string;
+}
+export interface SkillCategorie {
+  title: string;
+  skills: string[];
 }
 
 export interface Experience {

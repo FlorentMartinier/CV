@@ -7,11 +7,11 @@
         "website": "Website",
         "github": "GitHub",
         "languages": "Languages",
-        "skills": "Technical Skills",
+        "skills": "Skills",
         "seeProject": "View Project"
     },
     "personalInfo": {
-        "title": "Senior Full Stack Developer, {{years}} years of experience, specialized in Java, Kotlin, and Angular.",
+        "title": "Senior JVM Software Engineer oriented towards backend, performance, and distributed architectures",
         "firstJobDate": "2016-02-01",
         "name": "Florent Martinier",
         "email": "florent.martinier@free.fr",
@@ -25,35 +25,48 @@
     },
     "experiences": [
         {
-            "title": "Java Back-end Developer",
+            "title": "Senior Java Backend Engineer",
             "company": "Méritis",
             "location": "Montpellier, France",
             "period": "Apr 2025 - Present",
             "logo": "assets/meritis_logo.jfif",
             "description": [
-                "Back-end Consultant on assignment at CA-TS.",
-                "Development, optimization, and maintenance of subscription workflows for new retail banking offers."
+                "Backend Consultant at CA-TS (Crédit Agricole Technologies & Services).",
+                "Design, development, and maintenance of banking subscription workflows within a microservices architecture.",
+                "Application performance tuning to improve the viability and fluidity of user journeys.",
+                "Participation in the design and evolution of a distributed architecture based on REST and Kafka, with strong cross-squad collaboration.",
+                "Contribution to improving the DevOps environment: GitLab CI/CD pipelines, Kubernetes deployments, and automation of delivery procedures.",
+                "Continuous contribution to improving processes and tools in a complex, high-volume environment."
             ],
             "stack": [
                 "Java 8-21",
                 "Spring Boot",
-                "MySQL",
+                "REST APIs",
                 "Kafka",
-                "Kubernetes"
+                "Redis",
+                "Microservices",
+                "MySQL",
+                "Kubernetes",
+                "GitLab CI/CD",
+                "Scrum",
+                "SAFe"
             ]
         },
         {
-            "title": "Kotlin / Angular Full Stack Developer",
+            "title": "Senior Kotlin / Angular Engineer",
             "company": "Sopht",
-            "location": "Lyon (Full remote)",
+            "location": "Lyon (Full Remote)",
             "period": "Nov 2022 - Mar 2025",
             "logo": "assets/sopht_logo.jfif",
             "description": [
-                "Software development in the Green Tech sector, focusing on environmental measurement and IT decarbonization.",
-                "Design of connectors for automated data collection via third-party APIs (AWS, ServiceNow, VMWare, etc.).",
-                "Transformation of collected data into environmental footprint metrics.",
-                "Development of a frontend dashboard to visualize and manage CO2eq consumption.",
-                "Deployment of a Kubernetes / Docker infrastructure to automate execution tasks."
+                "Software development in the fields of Green IT, environmental footprint measurement, and IT decarbonization.",
+                "Design and development of connectors for automated data collection via third-party APIs (AWS, ServiceNow, VMware, etc.).",
+                "Processing and transformation of high-volume datasets to calculate environmental footprint metrics.",
+                "Worked on performance and scalability challenges to support the daily ingestion and processing of millions of data rows.",
+                "Participated in several major technical migrations to improve platform performance and scalability.",
+                "Developed Angular user interfaces for environmental data visualization.",
+                "Industrialization and automation of data processing workflows using Kubernetes and Docker.",
+                "Participated in client demonstrations, providing technical support and expertise on architecture and performance topics."
             ],
             "stack": [
                 "Kotlin",
@@ -62,9 +75,11 @@
                 "Angular 17",
                 "PostgreSQL",
                 "MongoDB",
+                "DuckDB",
+                "Kestra",
                 "Kubernetes",
                 "Docker",
-                "DuckDB"
+                "REST APIs"
             ]
         },
         {
@@ -74,17 +89,20 @@
             "period": "Nov 2020 - Nov 2022",
             "logo": "assets/sogelink_logo.jfif",
             "description": [
-                "Software development for land surveyors within an R&D department (Geosnap application).",
-                "Contribution to technical specification definitions.",
-                "Development, maintenance, and code reviews.",
-                "Worked within the SAFe (Scaled Agile Framework) methodology."
+                "Developed the 'Geosnap' application within the R&D department, aimed at facilitating surveyor work on construction sites.",
+                "Participated in designing a platform for importing and processing field photos to generate usable point clouds via photogrammetry.",
+                "Interfaced with Metashape to automate photogrammetric reconstruction processing.",
+                "Developed and maintained backend and frontend features in a Java / Angular environment.",
+                "Worked using the SAFe methodology within multidisciplinary teams requiring strong cross-squad communication via ActiveMQ."
             ],
             "stack": [
                 "Java 11",
                 "Spring Boot",
                 "Angular 8",
                 "PostgreSQL",
-                "ActiveMQ"
+                "ActiveMQ",
+                "REST APIs",
+                "SAFe"
             ]
         },
         {
@@ -94,11 +112,11 @@
             "period": "Jan 2020 - Nov 2020",
             "logo": "assets/hardis_logo.jfif",
             "description": [
-                "Development of an internal ERP tool for resource management (tracking availability, skills, and certifications).",
-                "Creation of functional and technical specifications from scratch.",
-                "Database schema design.",
-                "Feature development and implementation.",
-                "Technical leadership and mentoring of two apprentices."
+                "Built an internal company resource management project (tracking resource availability, skills, certifications, etc.).",
+                "Created functional and technical specifications from scratch.",
+                "Designed the data model.",
+                "Developed core application features.",
+                "Technically mentored two apprentices."
             ],
             "stack": [
                 "Java 11",
@@ -114,23 +132,23 @@
             "period": "Sep 2016 - Jan 2020",
             "logo": "assets/hardis_logo.jfif",
             "description": [
-                "Application Maintenance (TMA) for DXC on the GraphTalk A.I.A business solution (Life and Non-Life Insurance sectors).",
-                "Requirement gathering and solution design.",
-                "Corrective and evolutive maintenance.",
-                "Client training on GraphTalk A.I.A technology."
+                "Application Maintenance (TMA) on behalf of DXC for the GraphTalk A.I.A enterprise solution (Life and Non-Life Insurance sector).",
+                "Requirement gathering and solution definition.",
+                "Adaptive and corrective maintenance.",
+                "Conducted client training sessions on GraphTalk A.I.A technology."
             ],
             "stack": [
                 "GraphTalk A.I.A"
             ]
         },
         {
-            "title": "Java Developer Intern",
+            "title": "Java Development Intern",
             "company": "Iamanys",
             "location": "Fabrègues, France",
             "period": "Feb 2016 - Aug 2016",
             "description": [
-                "Software development in the healthcare sector (wound treatment monitoring).",
-                "Software maintenance and feature updates.",
+                "Software development in the healthcare sector (wound care treatment tracking).",
+                "Software maintenance and feature evolutions.",
                 "Test automation."
             ],
             "stack": [
@@ -144,21 +162,21 @@
     ],
     "education": [
         {
-            "degree": "Master's Degree: Dual Competency in Computer Science & Social Sciences",
+            "degree": "Master's Degree (Dual Competence): Computer Science and Social Sciences",
             "school": "Université Grenoble Alpes",
             "location": "Grenoble, France",
             "period": "2014 - 2016",
             "logo": "assets/universit_grenoble_alpes_logo.jfif"
         },
         {
-            "degree": "Bachelor's Degree in Cognitive Sciences",
+            "degree": "Bachelor's Degree in Cognitive Science",
             "school": "Université Lumière Lyon 2",
             "location": "Lyon, France",
             "period": "2011 - 2014",
             "logo": "assets/universite_lyon_2.jfif"
         },
         {
-            "degree": "Scientific Baccalaureate (High School Diploma), Honors",
+            "degree": "Scientific Baccalaureate (With Honors)",
             "school": "Lycée Georges Clémenceau",
             "location": "Montpellier, France",
             "period": "2008 - 2011"
@@ -168,7 +186,7 @@
         {
             "name": "Barrel Manager",
             "description": "Android application for managing barrel aging processes (Kotlin)",
-            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=en",
+            "link": "https://play.google.com/store/apps/details?id=com.fmartinier.barrelclassifier&hl=fr",
             "logo": "assets/barrel_manager.webp"
         },
         {
@@ -179,7 +197,7 @@
         },
         {
             "name": "Killer Party",
-            "description": "Android application to automate the 'Killer Party' game (Kotlin)",
+            "description": "Android application to automate and manage 'Killer Party' games (Kotlin)",
             "link": "killer_party.webp",
             "logo": "assets/killer_party.webp"
         }
@@ -191,19 +209,45 @@
         },
         {
             "name": "English",
-            "level": "Professional working proficiency (B1 level)"
+            "level": "Professional working proficiency"
         }
     ],
-    "skills": [
-        "Kotlin",
-        "Java",
-        "Spring",
-        "Angular",
-        "SQL",
-        "HTML / CSS",
-        "TailwindCSS",
-        "Docker",
-        "Kubernetes",
-        "Scrum"
+    "skillCategories": [
+        {
+            "title": "Backend",
+            "skills": [
+                "Java 8-21",
+                "Kotlin",
+                "Spring Boot",
+                "Kafka",
+                "REST APIs",
+                "SQL"
+            ]
+        },
+        {
+            "title": "Frontend",
+            "skills": [
+                "Angular",
+                "TypeScript",
+                "HTML / CSS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title": "Cloud & DevOps",
+            "skills": [
+                "Docker",
+                "Kubernetes",
+                "CI/CD"
+            ]
+        },
+        {
+            "title": "Architecture & Methodologies",
+            "skills": [
+                "Microservices",
+                "Scrum",
+                "SAFe"
+            ]
+        }
     ]
 }

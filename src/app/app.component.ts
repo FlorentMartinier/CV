@@ -1,8 +1,5 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { toJpeg } from 'html-to-image';
-import { jsPDF } from 'jspdf';
 import { EducationComponent } from "./components/education/education.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { ProjectComponent } from "./components/project/project.component";
@@ -12,7 +9,6 @@ import { TranslationService } from './services/translation.service';
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
     ExperienceComponent,
     EducationComponent,
     ProjectComponent,

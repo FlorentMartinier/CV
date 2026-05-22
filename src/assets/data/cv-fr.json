@@ -11,7 +11,7 @@
         "seeProject": "Voir le projet"
     },
     "personalInfo": {
-        "title": "Développeur Full Stack Senior {{years}} ans d'expérience, spécialisé en Java, Kotlin et Angular.",
+        "title": "Senior Software Engineer JVM orienté backend, performance et architectures distribuées",
         "firstJobDate": "2016-02-01",
         "name": "Florent Martinier",
         "email": "florent.martinier@free.fr",
@@ -25,35 +25,48 @@
     },
     "experiences": [
         {
-            "title": "Développeur Back-end Java",
+            "title": "Senior Backend Engineer Java",
             "company": "Méritis",
             "location": "Montpellier",
             "period": "Avr 2025 - Présent",
             "logo": "assets/meritis_logo.jfif",
             "description": [
-                "Consultant Back-end en mission chez CA-TS.",
-                "Développement, optimisation et maintenance des parcours de souscriptions de nouvelles offres pour les particuliers."
+                "Consultant Backend au sein de CA-TS (Crédit Agricole Technologies & Services).",
+                "Conception, développement et maintenance de parcours de souscription d'offres bancaires dans une architecture microservices.",
+                "Optimisation des performances applicatives afin d'améliorer la viabilité et la fluidité des parcours utilisateurs.",
+                "Participation à la conception et à l'évolution d'une architecture distribuée basée sur REST et Kafka, avec forte interconnexion entre squads.",
+                "Contribution à l’amélioration de l’environnement DevOps : pipelines CI/CD GitLab, déploiements Kubernetes et automatisation des procédures de livraison.",
+                "Contribution continue à l'amélioration des processus et outils dans un environnement complexe à forte volumétrie."
             ],
             "stack": [
                 "Java 8-21",
                 "Spring Boot",
-                "MySQL",
+                "REST APIs",
                 "Kafka",
-                "Kubernetes"
+                "Redis",
+                "Microservices",
+                "MySQL",
+                "Kubernetes",
+                "GitLab CI/CD",
+                "Scrum",
+                "SAFe"
             ]
         },
         {
-            "title": "Développeur Full Stack Kotlin / Angular",
+            "title": "Senior Kotlin / Angular Engineer",
             "company": "Sopht",
             "location": "Lyon (Full remote)",
             "period": "Nov 2022 - Mar 2025",
             "logo": "assets/sopht_logo.jfif",
             "description": [
-                "Développement logiciel dans le domaine de l'écologie, mesure environnementale et décarbonation de l'IT.",
-                "Conception de connecteurs pour collecter automatiquement des données via API tierces (AWS, ServiceNow, VMWare, etc.).",
-                "Transformation des données récoltées en empreinte environnementale.",
-                "Participation à la mise en place d'un frontend permettant de visualiser et piloter la consommation CO2eq.",
-                "Mise en place d'une infrastructure Kubernetes / Docker pour automatiser les exécutions."
+                "Développement logiciel dans le domaine de l'écologie, de la mesure environnementale et de la décarbonation de l'IT.",
+                "Conception et développement de connecteurs permettant la collecte automatisée de données via des APIs tierces (AWS, ServiceNow, VMware, etc.).",
+                "Traitement et transformation de larges volumes de données afin de calculer des indicateurs d'empreinte environnementale.",
+                "Travail sur des problématiques de performance et de scalabilité pour supporter l'ingestion et le traitement quotidien de millions de lignes de données.",
+                "Participation à plusieurs migrations techniques majeures afin d’améliorer les performances et la scalabilité de la plateforme.",
+                "Développement d’interfaces Angular de visualisation de données environnementales.",
+                "Industrialisation et automatisation des traitements via Kubernetes et Docker.",
+                "Participation aux démonstrations clients en tant que support technique et interlocuteur sur les sujets d'architecture et de performance."
             ],
             "stack": [
                 "Kotlin",
@@ -62,9 +75,11 @@
                 "Angular 17",
                 "PostgreSQL",
                 "MongoDB",
+                "DuckDB",
+                "Kestra",
                 "Kubernetes",
                 "Docker",
-                "DuckDB"
+                "REST APIs"
             ]
         },
         {
@@ -74,17 +89,20 @@
             "period": "Nov 2020 - Nov 2022",
             "logo": "assets/sogelink_logo.jfif",
             "description": [
-                "Développement logiciel à destination des géomètres au sein d'un pôle R&D (application Geosnap).",
-                "Participation à la définition des spécifications techniques.",
-                "Développement, maintenance, code review.",
-                "Travail en méthodologie SAFe."
+                "Développement de l'application Geosnap au sein du pôle R&D, destinée à faciliter le travail des géomètres sur les chantiers.",
+                "Participation à la conception d'une plateforme permettant l'import et le traitement de photos terrain afin de générer des nuages de points exploitables via photogrammétrie.",
+                "Interfaçage avec Metashape pour automatiser les traitements de reconstruction photogrammétrique.",
+                "Développement et maintenance de fonctionnalités backend et frontend dans un environnement Java / Angular.",
+                "Travail en méthodologie SAFe au sein d'équipes pluridisciplinaires nécessitant une forte communication inter-squads via ActiveMQ."
             ],
             "stack": [
                 "Java 11",
                 "Spring Boot",
                 "Angular 8",
                 "PostgreSQL",
-                "ActiveMQ"
+                "ActiveMQ",
+                "REST APIs",
+                "SAFe"
             ]
         },
         {
@@ -191,19 +209,45 @@
         },
         {
             "name": "Anglais",
-            "level": "Compétence professionnelle (niveau B1)"
+            "level": "Compétences professionnelles"
         }
     ],
-    "skills": [
-        "Kotlin",
-        "Java",
-        "Spring",
-        "Angular",
-        "SQL",
-        "HTML / CSS",
-        "TailwindCSS",
-        "Docker",
-        "Kubernetes",
-        "Scrum"
+    "skillCategories": [
+        {
+            "title": "Backend",
+            "skills": [
+                "Java 8-21",
+                "Kotlin",
+                "Spring Boot",
+                "Kafka",
+                "REST APIs",
+                "SQL"
+            ]
+        },
+        {
+            "title": "Frontend",
+            "skills": [
+                "Angular",
+                "TypeScript",
+                "HTML / CSS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title": "Cloud & DevOps",
+            "skills": [
+                "Docker",
+                "Kubernetes",
+                "CI/CD"
+            ]
+        },
+        {
+            "title": "Architecture & Méthodologies",
+            "skills": [
+                "Microservices",
+                "Scrum",
+                "SAFe"
+            ]
+        }
     ]
 }
