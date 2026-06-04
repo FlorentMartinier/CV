@@ -198,8 +198,14 @@
         {
             "name": "Killer Party",
             "description": "Android application to automate and manage 'Killer Party' games (Kotlin)",
-            "link": "killer_party.webp",
+            "link": "https://killer-party.en.aptoide.com/app",
             "logo": "assets/killer_party.webp"
+        },
+        {
+            "name": "Poppy's Workshops",
+            "description": "Redesign / Modernization of a Jimdo website showcasing creative workshops (Angular, TailwindCSS)",
+            "link": "https://les-ateliers-de-poppy.netlify.app/",
+            "logo": "assets/logo_poppy_light.png"
         }
     ],
     "languages": [

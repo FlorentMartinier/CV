@@ -6,19 +6,19 @@
     @page {
         margin: 0;
         size: 270mm 500mm;
-        height: 810mm
+        height: 845mm
     }
 
     .cv-print-container {
         width: 270mm !important;
-        height: 810mm !important;
-        max-height: 810mm !important;
+        height: 845mm !important;
+        max-height: 845mm !important;
         overflow: hidden !important;
         box-sizing: border-box;
         position: absolute;
         top: 0;
         left: 0;
-      }
+    }
 
     * {
         -webkit-print-color-adjust: exact !important;
